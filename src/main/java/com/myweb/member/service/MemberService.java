@@ -10,8 +10,6 @@ public interface MemberService {
 	
 	// 회원 리스트 - 관리자
 	public List<MemberVO> list(PageObject pageObject) throws Exception;
-	// 회원 리스트 - 관리자
-	public List<MemberVO> partnerJoinList(PageObject pageObject) throws Exception;
 	// 회원 정보보기
 	public MemberVO view(String id)	throws Exception;
 	// * 회원가입 처리

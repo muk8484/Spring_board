@@ -183,7 +183,7 @@ $(function(){
 						<!-- 관리자 메뉴 -->
 						<c:if test="${login ne null && login.gradeNo == 9}">
 							<li><a href="${path }/member/list.do">회원관리</a></li>
-							<li><a href="${path }/member/partnerJoinList.do">등급관리</a></li>
+							<li><a href="${path }/member/list.do">등급관리</a></li>
 						</c:if>
 					</ul>
 					<!-- 메인 메뉴 부분의 로그인 사용자 정보 -->

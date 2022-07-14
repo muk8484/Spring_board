@@ -10,8 +10,6 @@ public interface MemberMapper {
 
 	// 회원 리스트 - 관리자
 	public List<MemberVO> list(PageObject pageObject) throws Exception;
-	// 파트너 신청 리스트 - 관리자
-	public List<MemberVO> partnerJoinList(PageObject pageObject) throws Exception;
 	// 전제 데이터 갯수
 	public long getTotalRow(PageObject pageObject) throws Exception;
 	// 회원 정보보기 / 내 정보보기

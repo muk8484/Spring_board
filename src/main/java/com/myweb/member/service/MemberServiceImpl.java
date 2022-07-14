@@ -65,14 +65,6 @@ public class MemberServiceImpl implements MemberService{
 		// TODO Auto-generated method stub
 		return mapper.changeGradeNo(vo);
 	}
-	
-	// 파트너 신청 리스트
-	@Override
-	public List<MemberVO> partnerJoinList(PageObject pageObject) throws Exception {
-		// TODO Auto-generated method stub
-		pageObject.setTotalRow(mapper.getTotalRow(pageObject));
-		return mapper.partnerJoinList(pageObject);
-	}
 
 
 

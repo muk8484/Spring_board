@@ -36,22 +36,12 @@ public class MemberController {
 	
 	// 회원 리스트 - 관리자
 	@GetMapping("/list.do")
-	// @ModelAttribute 변수 - model에 담긴 변수로 처리해 준다. -> JSP 까지 전달된다.
+	// @ModelAttribute 변수 - model에 담긴 벼수로 처리해 준다. -> JSP 까지 전달된다.
 	public String list(@ModelAttribute PageObject pageObject, Model model) throws Exception {
 		
 		model.addAttribute("list", service.list(pageObject));
 		
 		return MODULE + "/list";
-	}
-	
-	// 파트너 가입신청 리스트 - 관리자
-	@GetMapping("/partnerJoinList.do")
-	// @ModelAttribute 변수 - model에 담긴 변수로 처리해 준다. -> JSP 까지 전달된다.
-	public String partnerJoinList(@ModelAttribute PageObject pageObject, Model model) throws Exception {
-		
-		model.addAttribute("list", service.partnerJoinList(pageObject));
-		
-		return MODULE + "/partnerJoinList";
 	}
 	
 	// 회원 정보보기 / 내 정보보기
